@@ -5,8 +5,8 @@ const fs = require('fs');
 // TODO: Create an array of questions for user input
 const questions = [
     'What is the title of your project?', 
-    'What is a brief description of your project?',
-    'What are the installation instructions?',
+    'Please provide a brief description of your project...',
+    'Please provide any necessary installation instructions...',
     'Please specify any usage information...',
     'Please provide any contribution guidelines...',
     'Please provide any necessary test instructions...',
@@ -15,7 +15,74 @@ const questions = [
     'Please enter your email address...'
 ];
 
-console.log(questions[0]);
+const licenseArray = [
+    'Public Domain License', 
+    'Apache Style License', 
+    'BSD License', 
+    'MIT License', 
+    'GNU Public License', 
+    'GNU Library', 
+    'Mozilla Public License', 
+    'Common Development and Distribution License', 
+    'Eclipse Public License', 
+    'Proprietary License'
+];
+
+inquirer
+    .prompt([
+        {
+            name: 'title',
+            type: 'input',
+            message: questions[0],
+        },
+        {
+            name: 'description',
+            type: 'input',
+            message: questions[1],
+        },
+        {
+            name: 'install_instructions',
+            type: 'input',
+            message: questions[2],
+        },
+        {
+            name: 'usage_guidelines',
+            type: 'input',
+            message: questions[3],
+        },
+        {
+            name: 'contribution_instructions',
+            type: 'input',
+            message: questions[4],
+        },
+        {
+            name: 'test_instructions',
+            type: 'input',
+            message: questions[5],
+        },
+        {
+            name: 'desired_license',
+            type: 'checkbox',
+            message: questions[6],
+            choices: licenseArray,
+        },
+        {
+            name: 'GitHub_username',
+            type: 'input',
+            message: questions[7],
+        },
+        {
+            name: 'email',
+            type: 'input',
+            message: questions[8],
+        },
+    ])
+
+    .then((data) => {
+        console.log("Your project title is " + data.desired_license);
+    })
+
+
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
 
