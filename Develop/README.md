@@ -15,11 +15,11 @@ sdfs
 
 ## Installation
 
-sdfds
+sdfs
 
 ## Usage
 
-sdfds
+sdfs
 
 ## Contribution
 
@@ -27,20 +27,20 @@ sdfs
 
 ## Test
 
-sdfdsf
+sdfs
 
 ## License
 
 If this application is licensed, the badge and link to license detail is provided below:
 
-![license](https://img.shields.io/badge/License-Apache-2.0-blue)
+![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 
 http://www.apache.org/licenses/LICENSE-2.0
 
 ## Profile
 
 View my GitHub:
-https://github.com/sdfds
+https://github.com/sdfs
 
 Reach me by email:
-sdfsd
+sdfs

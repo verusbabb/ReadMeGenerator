@@ -8,7 +8,34 @@ function renderLicenseBadge(license) {
         return ""
     }
     else {
-        return `![license](https://img.shields.io/badge/License-${license}-blue)`
+        var badge;
+        switch (license) {
+            case 'Apache-2.0':
+                badge = `![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`;
+                break;
+            case 'BSD-2-Clause':
+                badge = `![license](https://img.shields.io/badge/License-BSD%202-blue.svg)`;
+                break;
+            case 'GPL-3.0':
+                badge = `![license](https://img.shields.io/badge/License-GLP%203.0-blue.svg)`;
+                break;
+            case 'MIT':
+                badge = `![license](https://img.shields.io/badge/License-MIT-blue.svg)`;
+                break;
+            case 'GNU_Library':
+                badge = `![license](https://img.shields.io/badge/License-GLPv3-blue.svg)`;
+                break;
+            case 'MPL-2.0':
+                badge = `![license](https://img.shields.io/badge/License-MPL-blue.svg)`;
+                break;
+            case 'The Unlicense':
+                badge = `![license](https://img.shields.io/badge/License-Unlicense-blue.svg)`;
+                break;
+            case 'EPL-2.0':
+                badge = `![license](https://img.shields.io/badge/License-Eclipse-blue.svg)`;
+    
+        }
+        return badge
     }
 };
 
@@ -95,7 +122,7 @@ ${data.test_instructions}
 
 If this application is licensed, the badge and link to license detail is provided below:
 
-${renderLicenseBadge(data.desired_license)}
+${renderLicenseBadge(...data.desired_license)}
 
 ${renderLicenseLink(...data.desired_license)}
 

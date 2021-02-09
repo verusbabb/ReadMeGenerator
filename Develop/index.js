@@ -26,7 +26,7 @@ const licenseArray = [
     'MIT', 
     'GNU_Library', 
     'MPL-2.0', 
-    'CDDL-1.0', 
+    'The Unlicense', 
     'EPL-2.0'
 ]; 
 
