@@ -19,16 +19,15 @@ const questions = [
 ];
 
 const licenseArray = [
-    'Public Domain License', 
-    'Apache Style License', 
-    'BSD License', 
-    'MIT License', 
-    'GNU Public License', 
-    'GNU Library', 
-    'Mozilla Public License', 
-    'Common Development and Distribution License', 
-    'Eclipse Public License', 
-    'Proprietary License'
+    'PBL', 
+    'Apache_Style', 
+    'BSD', 
+    'MIT', 
+    'GNU_Public', 
+    'GNU_Library', 
+    'Mozilla_Public',  
+    'Eclipse', 
+    'Proprietary'
 ];
 
 inquirer
@@ -84,7 +83,7 @@ inquirer
     .then((data) => {
         console.log(data.title);
         readMeContent = generateMarkdown(data);
-        generateMarkdown(data);
+        // generateMarkdown(data);
         writeToFile(readMeContent, data);
         
         
@@ -95,7 +94,7 @@ inquirer
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile('README.md', readMeContent, data, (err) =>
+    fs.writeFile('README.md', readMeContent, (err) =>
         err ? console.log(err) : console.log('Successfully generated README!'));
 }
 
