@@ -1,4 +1,4 @@
-# sdfs
+# README Generator
 
 ## Table of Contents
 - [Description](#Description)
@@ -11,7 +11,7 @@
 
 ## Description
 
-    sdfs
+    This app takes user input for all of the primary sections of app documentation and automatically produces a well formatted README.
 
 ## Installation
 
@@ -19,28 +19,28 @@
 
 ## Usage
 
-    sdfs
+    sdfsd
 
 ## Contribution
 
-    sdfs
+    sdfsff
 
 ## Test
 
-    sdfs
+    sdfsd
 
 ## License
 
 If this application is licensed, the badge and link to license detail is provided below:
 
-![license](https://img.shields.io/badge/License&message=BSD-2-Clause&color=blue)
+![license](https://img.shields.io/badge/License-GPL-3.0-blue)
 
-https://www.tldrlegal.com/l/freebsd
+https://www.gnu.org/licenses/gpl-3.0.en.html
 
 ## Profile
 
 View my GitHub:
-https://github.com/sdfs
+https://github.com/verusbabb
 
 Reach me by email:
-sdf
+steve.babb@outlook.com
