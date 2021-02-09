@@ -1,13 +1,13 @@
 # sdfsdf
 
 ## Table of Contents
-[Description](#Description)
-[Installation](#Installation)
-[Usage](#Usage)
-[Contribution](#Contribution)
-[Test](#Test)
-[License](#License)
-[Profile](#Profile)
+- [Description](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contribution](#Contribution)
+- [Test](#Test)
+- [License](#License)
+- [Profile](#Profile)
 
 ## Description
 
