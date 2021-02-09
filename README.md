@@ -1,5 +1,3 @@
-# ReadMeGenerator
-
 # sdfsdf
 
 ## Table of Contents
@@ -34,7 +32,7 @@
 ## License
 
     Public Domain License
-    ![Badge](https://img.shields.io/badge/License-Public Domain License-blueviolet)
+    ![Badge](https://img.shields.io/badge/License-PBLicense-blueviolet)
 
 ## Profile
 
