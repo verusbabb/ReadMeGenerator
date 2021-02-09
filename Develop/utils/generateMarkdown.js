@@ -12,8 +12,10 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
     var text;
     console.log(license);
+    console.log(typeof license);
 
-    switch (license) {
+
+    switch(license) {
         case 'Apache-2.0':
             text = 'http://www.apache.org/licenses/LICENSE-2.0';
             console.log(text);
@@ -38,7 +40,6 @@ function renderLicenseLink(license) {
             break;
         case 'EPL-2.0':
             text = 'https://www.eclipse.org/legal/epl-2.0/';
-            break;
     
     }
     console.log(text);
@@ -86,7 +87,7 @@ function generateMarkdown(data) {
 ## License
 
 ${renderLicenseBadge(data.desired_license)};
-${renderLicenseLink(data.desired_license)};
+${renderLicenseLink(...data.desired_license)};
 
 ## Profile
 
