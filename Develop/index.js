@@ -2,6 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
+const { kMaxLength } = require('buffer');
 var readMeContent;
 // const markDown = require('./utils/generateMarkdown.js');
 
@@ -19,16 +20,25 @@ const questions = [
 ];
 
 const licenseArray = [
-    'PBL', 
-    'Apache_Style', 
-    'BSD', 
+    'Apache-2.0', 
+    'BSD-2-Clause', 
+    'GPL-3.0',  
     'MIT', 
-    'GNU_Public', 
     'GNU_Library', 
-    'Mozilla_Public',  
-    'Eclipse', 
-    'Proprietary'
-];
+    'MPL-2.0', 
+    'CDDL-1.0', 
+    'EPL-2.0'
+]; 
+    
+
+    // ['Apache-2.0', 'http://www.apache.org/licenses/LICENSE-2.0'],
+    // ['BSD-2-Clause', 'https://www.tldrlegal.com/l/freebsd'],
+    // ['GPL-3.0', 'https://www.gnu.org/licenses/gpl-3.0.en.html'],
+    // ['MIT', 'https://choosealicense.com/licenses/mit/'],
+    // ['GNU_Library', 'https://www.gnu.org/licenses/lgpl-3.0.html'],
+    // ['MPL-2.0', 'https://www.tldrlegal.com/l/mpl-2.0'],
+    // ['CDDL-1.0', 'https://javaee.github.io/glassfish/LICENSE'],
+    // ['EPL-2.0', 'https://www.eclipse.org/legal/epl-2.0/']
 
 inquirer
     .prompt([
@@ -81,7 +91,8 @@ inquirer
     ])
 
     .then((data) => {
-        console.log(data.title);
+        //console.log(data.title);
+        // console.log(data.desired_license);
         readMeContent = generateMarkdown(data);
         // generateMarkdown(data);
         writeToFile(readMeContent, data);
