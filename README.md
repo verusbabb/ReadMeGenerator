@@ -31,7 +31,7 @@
 
 ## License
 
-    !(https://img.shields.io/badge/License-PBL-blueviolet)
+    ![](https://img.shields.io/badge/License-PBL-blueviolet)
 
 ## Profile
 
