@@ -10,14 +10,13 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-    var text ='';
-    var num=1;
-    console.log(num);
+    var text;
+    console.log(license);
 
     switch (license) {
         case 'Apache-2.0':
             text = 'http://www.apache.org/licenses/LICENSE-2.0';
-            //console.log(text);
+            console.log(text);
             break;
         case 'BSD-2-Clause':
             text = 'https://www.tldrlegal.com/l/freebsd';
@@ -43,7 +42,7 @@ function renderLicenseLink(license) {
     
     }
     console.log(text);
-    console.log(num);
+    
     return text;
 }
 
