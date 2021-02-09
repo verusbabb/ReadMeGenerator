@@ -4,8 +4,15 @@ const { link } = require("fs");
 
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-    return `![licenseBadge](https://img.shields.io/badge/License-${license}-blue)`
- }
+    if (license === "none" || license === "") {
+        return ""
+    }
+    else {
+        return `![license](https://img.shields.io/badge/License-${license}-blue)`
+    }
+};
+
+
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -15,10 +22,9 @@ function renderLicenseLink(license) {
     console.log(typeof license);
 
 
-    switch(license) {
+    switch (license) {
         case 'Apache-2.0':
             text = 'http://www.apache.org/licenses/LICENSE-2.0';
-            console.log(text);
             break;
         case 'BSD-2-Clause':
             text = 'https://www.tldrlegal.com/l/freebsd';
@@ -40,10 +46,11 @@ function renderLicenseLink(license) {
             break;
         case 'EPL-2.0':
             text = 'https://www.eclipse.org/legal/epl-2.0/';
-    
+
     }
     console.log(text);
-    
+
+
     return text;
 }
 
@@ -53,7 +60,7 @@ function renderLicenseLink(license) {
 
 //a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+    return `# ${data.title}
 
 ## Table of Contents
 - [Description](#Description)
@@ -66,33 +73,39 @@ function generateMarkdown(data) {
 
 ## Description
 
-    ${data.description}
+${data.description}
 
 ## Installation
 
-    ${data.install_instructions}
+${data.install_instructions}
 
 ## Usage
 
-    ${data.usage_guidelines}
+${data.usage_guidelines}
 
 ## Contribution
 
-    ${data.contribution_instructions}
+${data.contribution_instructions}
 
 ## Test
 
-    ${data.test_instructions}
+${data.test_instructions}
 
 ## License
 
-${renderLicenseBadge(data.desired_license)};
-${renderLicenseLink(...data.desired_license)};
+If this application is licensed, the badge and link to license detail is provided below:
+
+${renderLicenseBadge(data.desired_license)}
+
+${renderLicenseLink(...data.desired_license)}
 
 ## Profile
 
-    ${data.GitHub_username}
-    ${data.email}
+View my GitHub:
+https://github.com/${data.GitHub_username}
+
+Reach me by email:
+${data.email}
 `
 }
 

@@ -4,9 +4,8 @@ const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 const { kMaxLength } = require('buffer');
 var readMeContent;
-// const markDown = require('./utils/generateMarkdown.js');
 
-// Create an array of questions for user input
+// Construct an array of questions for user input
 const questions = [
     'What is the title of your project?', 
     'Please provide a brief description of your project...',
@@ -19,6 +18,7 @@ const questions = [
     'Please enter your email address...'
 ];
 
+//Construct an array of potential/popular license options
 const licenseArray = [
     'Apache-2.0', 
     'BSD-2-Clause', 
@@ -30,6 +30,7 @@ const licenseArray = [
     'EPL-2.0'
 ]; 
 
+//Inquirer prompt sequency
 inquirer
     .prompt([
         {
@@ -80,6 +81,7 @@ inquirer
         },
     ])
 
+    //Waiting for prompt data and then generating markdown and writing to the resulting content to the readme file.
     .then((data) => {
         //console.log(data.title);
         // console.log(data.desired_license);
@@ -97,7 +99,10 @@ inquirer
 function writeToFile(fileName, data) {
     fs.writeFile('README.md', readMeContent, (err) =>
         err ? console.log(err) : console.log('Successfully generated README!'));
+        
 }
+
+
 
 // TODO: Create a function to initialize app
 // function init() {}
