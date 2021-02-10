@@ -6,8 +6,8 @@
 - [Description](#Description)
 - [User Story](#User%20Story)
 - [Acceptance Criteria](#Acceptance%20Criteria)
-- [Installatin](#Installation)
-- [Installation Walk-Through Video](#Installation%20Walk-Through%20Video)
+- [Installation](#Installation)
+- [Installation Walk-Through Video](#Installation%20Walk\-\-Through%20Video)
 - [License](#License)
 - [Steve Babb](#Steve%20Babb)
 
