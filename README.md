@@ -1,4 +1,4 @@
-# ReadMe generator test file
+# ReadMe Generator
 
 ## Table of Contents
 - [Description](#Description)
@@ -11,7 +11,7 @@
 
 ## Description
 
-blah bala
+non
 
 ## Installation
 
@@ -31,11 +31,9 @@ none
 
 ## License
 
-If this application is licensed, the badge and link to license detail is provided below:
+This application is governed by the license indicated below.  Click the badge for detailed license information.
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
-(https://www.gnu.org/licenses/gpl-3.0)
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
 ## Profile
 
