@@ -1,4 +1,4 @@
-# README Generator
+# ReadMe generator test file
 
 ## Table of Contents
 - [Description](#Description)
@@ -11,7 +11,7 @@
 
 ## Description
 
-An Application that...
+blah bala
 
 ## Installation
 
@@ -33,9 +33,9 @@ none
 
 If this application is licensed, the badge and link to license detail is provided below:
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-undefined
+(https://www.gnu.org/licenses/gpl-3.0)
 
 ## Profile
 
