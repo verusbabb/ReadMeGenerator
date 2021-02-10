@@ -25,7 +25,7 @@ sdfsdf
 
 ## Contribution
 
-sdfsdf
+sdfs
 
 ## Test
 
@@ -39,6 +39,6 @@ This application is governed by the license indicated below.  Click the badge fo
 
 ## Profile
 
-Please contact me with questions or contribution requesets:
-- GitHub: https://github.com/sdfs
-- Email: sdfs
+Please contact me with questions or contribution requests:
+- GitHub: https://github.com/sdfdsfsdfsdfsdfsd
+- Email: sdfsdfdsfdsf
