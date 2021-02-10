@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
-const { kMaxLength } = require('buffer');
+
 var readMeContent;
 
 // Construct an array of questions for user input
@@ -31,7 +31,7 @@ const licenseArray = [
     'Eclipse Public License 1.0'
 ]; 
 
-//Inquirer prompt sequency
+//Inquirer prompt sequence
 inquirer
     .prompt([
         {
@@ -82,31 +82,21 @@ inquirer
         },
     ])
 
-    //Waiting for prompt data and then generating markdown and writing to the resulting content to the readme file.
+    //Waiting for prompt data and then generating markdown then calling the writeToFile with returned content/data.
     .then((data) => {
         //console.log(data.title);
         // console.log(data.desired_license);
         readMeContent = generateMarkdown(data);
         // generateMarkdown(data);
         writeToFile(readMeContent, data);
-        
-        
-
     })
     
 
 
-// TODO: Create a function to write README file
+// Write README file
 function writeToFile(fileName, data) {
     fs.writeFile('README.md', readMeContent, (err) =>
         err ? console.log(err) : console.log('Successfully generated README!'));
         
 }
 
-
-
-// TODO: Create a function to initialize app
-// function init() {}
-
-// Function call to initialize app
-// init();

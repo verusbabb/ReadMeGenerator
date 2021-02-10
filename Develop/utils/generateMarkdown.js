@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-
+// Render a license badge and make the license badge a link to license documentation.
 const { link } = require("fs");
 
 // If there is no license, return an empty string
@@ -42,7 +41,7 @@ function renderLicenseBadge(license) {
     }
 };
 
-//a function to generate markdown for README
+//Generate markdown for README
 function generateMarkdown(data) {
     return `${renderLicenseBadge(...data.desired_license)}
     
@@ -89,6 +88,5 @@ Please contact me with questions or contribution requests:
 - GitHub: https://github.com/${data.GitHub_username}
 - Email: ${data.email}`
 }
-
 
 module.exports = generateMarkdown;
