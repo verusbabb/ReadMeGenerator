@@ -42,56 +42,11 @@ function renderLicenseBadge(license) {
     }
 };
 
-
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-// function renderLicenseLink(license) {
-//     var text;
-//     console.log(license);
-//     console.log(typeof license);
-
-
-//     switch (license) {
-//         case 'Apache 2.0 License':
-//                 text = `(https://opensource.org/licenses/Apache-2.0)`;
-//                 break;
-//             case 'Boost Software License 1.0':
-//                 text = `(https://www.boost.org/LICENSE_1_0.txt)`;
-//                 break;
-//             case 'BSD 3-Clause License':
-//                 text = `(https://opensource.org/licenses/BSD-3-Clause)`;
-//                 break;
-//             case 'BSD 2-Clause License':
-//                 text = `(https://opensource.org/licenses/BSD-2-Clause)`;
-//                 break;
-//             case 'GNU GPL v3':
-//                 text = `(https://www.gnu.org/licenses/gpl-3.0)`;
-//                 break;
-//             case 'MIT':
-//                 text = `(https://www.gnu.org/licenses/gpl-3.0)`;
-//                 break;
-//             case 'Mozilla Public License 2.0':
-//                 text = `(https://opensource.org/licenses/MPL-2.0)`;
-//                 break;
-//             case 'The Unlicense':
-//                 text = `(http://unlicense.org/)`;
-//                 break;
-//             case 'Eclipse Public License 1.0':
-//                 text = `(https://opensource.org/licenses/EPL-1.0)`;
-
-//     }
-
-//     return text;
-// }
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-// function renderLicenseSection(license) { }
-
 //a function to generate markdown for README
 function generateMarkdown(data) {
-    return `# ${data.title}
+    return `${renderLicenseBadge(...data.desired_license)}
+    
+# ${data.title}
 
 ## Table of Contents
 - [Description](#Description)
