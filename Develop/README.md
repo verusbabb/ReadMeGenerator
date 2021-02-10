@@ -1,6 +1,6 @@
-[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
     
-# sdfsdfsd
+# sdfsdf
 
 ## Table of Contents
 - [Description](#Description)
@@ -17,30 +17,28 @@ sdfsdf
 
 ## Installation
 
-sdfsd
+sdfsdf
 
 ## Usage
 
-sdfs
+sdfsdf
 
 ## Contribution
 
-sdfs
+sdfsdf
 
 ## Test
 
-sdf
+sdfsd
 
 ## License
 
 This application is governed by the license indicated below.  Click the badge for detailed license information.
 
-[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Profile
 
-View my GitHub:
-https://github.com/verusbabb
-
-Reach me by email:
-steve.babb@outlook.com
+Please contact me with questions or contribution requesets:
+- GitHub: https://github.com/sdfs
+- Email: sdfs

@@ -85,12 +85,9 @@ ${renderLicenseBadge(...data.desired_license)}
 
 ## Profile
 
-View my GitHub:
-https://github.com/${data.GitHub_username}
-
-Reach me by email:
-${data.email}
-`
+Please contact me with questions or contribution requests:
+- GitHub: https://github.com/${data.GitHub_username}
+- Email: ${data.email}`
 }
 
 
