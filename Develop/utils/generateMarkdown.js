@@ -5,34 +5,37 @@ const { link } = require("fs");
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
     if (license === "none" || license === "") {
-        return ""
+        return "This application does not have a license."
     }
     else {
         var badge;
         switch (license) {
-            case 'Apache-2.0':
-                badge = `![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`;
+            case 'Apache 2.0 License':
+                badge = `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
                 break;
-            case 'BSD-2-Clause':
-                badge = `![license](https://img.shields.io/badge/License-BSD%202-blue.svg)`;
+            case 'Boost Software License 1.0':
+                badge = `[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`;
                 break;
-            case 'GPL-3.0':
-                badge = `![license](https://img.shields.io/badge/License-GLP%203.0-blue.svg)`;
+            case 'BSD 3-Clause License':
+                badge = `[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`;
+                break;
+            case 'BSD 2-Clause License':
+                badge = `[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)`;
+                break;
+            case 'GNU GPL v3':
+                badge = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
                 break;
             case 'MIT':
-                badge = `![license](https://img.shields.io/badge/License-MIT-blue.svg)`;
+                badge = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
                 break;
-            case 'GNU_Library':
-                badge = `![license](https://img.shields.io/badge/License-GLPv3-blue.svg)`;
-                break;
-            case 'MPL-2.0':
-                badge = `![license](https://img.shields.io/badge/License-MPL-blue.svg)`;
+            case 'Mozilla Public License 2.0':
+                badge = `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`;
                 break;
             case 'The Unlicense':
-                badge = `![license](https://img.shields.io/badge/License-Unlicense-blue.svg)`;
+                badge = `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`;
                 break;
-            case 'EPL-2.0':
-                badge = `![license](https://img.shields.io/badge/License-Eclipse-blue.svg)`;
+            case 'Eclipse Public License 1.0':
+                badge = `[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)`;
     
         }
         return badge
@@ -43,43 +46,44 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
-    var text;
-    console.log(license);
-    console.log(typeof license);
+// function renderLicenseLink(license) {
+//     var text;
+//     console.log(license);
+//     console.log(typeof license);
 
 
-    switch (license) {
-        case 'Apache-2.0':
-            text = 'http://www.apache.org/licenses/LICENSE-2.0';
-            break;
-        case 'BSD-2-Clause':
-            text = 'https://www.tldrlegal.com/l/freebsd';
-            break;
-        case 'GPL-3.0':
-            text = 'https://www.gnu.org/licenses/gpl-3.0.en.html';
-            break;
-        case 'MIT':
-            text = 'https://choosealicense.com/licenses/mit/';
-            break;
-        case 'GNU_Library':
-            text = 'https://www.gnu.org/licenses/lgpl-3.0.html';
-            break;
-        case 'MPL-2.0':
-            text = 'https://www.tldrlegal.com/l/mpl-2.0';
-            break;
-        case 'CDDL-1.0':
-            text = 'https://javaee.github.io/glassfish/LICENSE';
-            break;
-        case 'EPL-2.0':
-            text = 'https://www.eclipse.org/legal/epl-2.0/';
+//     switch (license) {
+//         case 'Apache 2.0 License':
+//                 text = `(https://opensource.org/licenses/Apache-2.0)`;
+//                 break;
+//             case 'Boost Software License 1.0':
+//                 text = `(https://www.boost.org/LICENSE_1_0.txt)`;
+//                 break;
+//             case 'BSD 3-Clause License':
+//                 text = `(https://opensource.org/licenses/BSD-3-Clause)`;
+//                 break;
+//             case 'BSD 2-Clause License':
+//                 text = `(https://opensource.org/licenses/BSD-2-Clause)`;
+//                 break;
+//             case 'GNU GPL v3':
+//                 text = `(https://www.gnu.org/licenses/gpl-3.0)`;
+//                 break;
+//             case 'MIT':
+//                 text = `(https://www.gnu.org/licenses/gpl-3.0)`;
+//                 break;
+//             case 'Mozilla Public License 2.0':
+//                 text = `(https://opensource.org/licenses/MPL-2.0)`;
+//                 break;
+//             case 'The Unlicense':
+//                 text = `(http://unlicense.org/)`;
+//                 break;
+//             case 'Eclipse Public License 1.0':
+//                 text = `(https://opensource.org/licenses/EPL-1.0)`;
 
-    }
-    console.log(text);
+//     }
 
-
-    return text;
-}
+//     return text;
+// }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -120,11 +124,9 @@ ${data.test_instructions}
 
 ## License
 
-If this application is licensed, the badge and link to license detail is provided below:
+This application is governed by the license indicated below.  Click the badge for detailed license information.
 
 ${renderLicenseBadge(...data.desired_license)}
-
-${renderLicenseLink(...data.desired_license)}
 
 ## Profile
 

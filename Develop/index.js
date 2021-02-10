@@ -20,14 +20,15 @@ const questions = [
 
 //Construct an array of potential/popular license options
 const licenseArray = [
-    'Apache-2.0', 
-    'BSD-2-Clause', 
-    'GPL-3.0',  
+    'Apache 2.0 License', 
+    'Boost Software License 1.0', 
+    'BSD 3-Clause License',  
+    'BSD 2-Clause License', 
+    'GNU GPL v3',
     'MIT', 
-    'GNU_Library', 
-    'MPL-2.0', 
+    'Mozilla Public License 2.0', 
     'The Unlicense', 
-    'EPL-2.0'
+    'Eclipse Public License 1.0'
 ]; 
 
 //Inquirer prompt sequency
