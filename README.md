@@ -57,7 +57,7 @@ node index.js
 
 ## Installation Walk-Through Video
 
-(To be inserted here)
+[](https://drive.google.com/file/d/1Zn8zUnmD5PEl0k-_XZJEMLMe18lvOe0f/view)
 
 ## License
 
