@@ -59,13 +59,11 @@ node index.js
 
 Demo video and sample output screenshot
 
-[README_GENERTOR_DEMO_VIDEO](https://drive.google.com/file/d/1Zn8zUnmD5PEl0k-_XZJEMLMe18lvOe0f/view)
-
-[README_GENERATOR_DEMO_VIDEO2](https://github.com/verusbabb/ReadMeGenerator/blob/main/Assets/demoVideo.webm)
+[Click to view install and usage demo: ](https://drive.google.com/file/d/1Zn8zUnmD5PEl0k-_XZJEMLMe18lvOe0f/view)
 
 ## Sample Output
 
-![Sample_Output](https://github.com/verusbabb/ReadMeGenerator/blob/main/Assets/repo-output-example.png)
+![](https://github.com/verusbabb/ReadMeGenerator/blob/main/Assets/repo-output-example.png)
 
 ## License
 
