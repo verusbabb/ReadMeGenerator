@@ -95,7 +95,7 @@ inquirer
 
 // Write README file
 function writeToFile(data) {
-    fs.writeFile('./Develop/README.md', data, (err) =>
+    fs.writeFile('./README.md', data, (err) =>
         err ? console.log(err) : console.log('Successfully generated README!'));
 
 }
