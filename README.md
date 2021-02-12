@@ -57,7 +57,9 @@ node index.js
 
 ## Installation Walk-Through Video
 
-[](https://drive.google.com/file/d/1Zn8zUnmD5PEl0k-_XZJEMLMe18lvOe0f/view)
+Demo video:
+
+[README GENERTOR DEMO VIDEO](https://drive.google.com/file/d/1Zn8zUnmD5PEl0k-_XZJEMLMe18lvOe0f/view)
 
 ## License
 
