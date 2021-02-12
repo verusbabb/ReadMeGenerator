@@ -61,6 +61,10 @@ Demo video:
 
 [README GENERTOR DEMO VIDEO](https://drive.google.com/file/d/1Zn8zUnmD5PEl0k-_XZJEMLMe18lvOe0f/view)
 
+[README GENERATOR DEMO VIDEO2](./Assets/demoVideo.png)
+
+[!](./Assets/repo-output.example.png)
+
 ## License
 
 This application is governed by the license(s) indicated below.  Click the badge(s) for detailed license information.
