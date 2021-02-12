@@ -55,15 +55,15 @@ To run this application, input the following commands from an integrated termina
 node index.js
 ```
 
-## Installation Walk-Through Video
+## Installation Walk-Through Video And Sample Output
 
-Demo video:
+Demo video and sample output screenshot
 
 [README GENERTOR DEMO VIDEO](https://drive.google.com/file/d/1Zn8zUnmD5PEl0k-_XZJEMLMe18lvOe0f/view)
 
 [README GENERATOR DEMO VIDEO2](./Assets/demoVideo.png)
 
-[!](./Assets/repo-output.example.png)
+!(./Assets/repo-output.example.png)
 
 ## License
 
