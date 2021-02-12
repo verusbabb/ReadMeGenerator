@@ -59,11 +59,11 @@ node index.js
 
 Demo video and sample output screenshot
 
-[README GENERTOR DEMO VIDEO](https://drive.google.com/file/d/1Zn8zUnmD5PEl0k-_XZJEMLMe18lvOe0f/view)
+[README_GENERTOR_DEMO_VIDEO](https://drive.google.com/file/d/1Zn8zUnmD5PEl0k-_XZJEMLMe18lvOe0f/view)
 
-[README GENERATOR DEMO VIDEO2](./Assets/demoVideo.png)
+[README_GENERATOR_DEMO_VIDEO2](./Assets/demoVideo.png)
 
-!(./Assets/repo-output.example.png)
+![Sample_Output(./Assets/repo-output.example.png)
 
 ## License
 
