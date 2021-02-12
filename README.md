@@ -43,11 +43,16 @@ THEN I am taken to the corresponding section of the README
 
 ## Installation
 
+To install this application, input the following commands from an integrated terminal line:
+```bash
+node install inquirer
+node install fs
+```
+
+## Usage
 To run this application, input the following commands from an integrated terminal line:
 ```
-- node install inquirer
-- node install fs
-- node index.js
+node index.js
 ```
 
 ## Installation Walk-Through Video
