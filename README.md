@@ -59,7 +59,7 @@ node index.js
 
 Demo video and sample output screenshot
 
-[Click to view install and usage demo: ](https://drive.google.com/file/d/1Zn8zUnmD5PEl0k-_XZJEMLMe18lvOe0f/view)
+[Click me to view install and usage demo](https://drive.google.com/file/d/1Zn8zUnmD5PEl0k-_XZJEMLMe18lvOe0f/view)
 
 ## Sample Output
 
