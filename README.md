@@ -63,6 +63,8 @@ Demo video and sample output screenshot
 
 [README_GENERATOR_DEMO_VIDEO2](./Assets/demoVideo.png)
 
+## SAMPLE OUTPUT
+
 ![Sample_Output](https://github.com/verusbabb/ReadMeGenerator/blob/main/Assets/repo-output-example.png)
 
 ## License
