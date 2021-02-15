@@ -46,7 +46,7 @@ THEN I am taken to the corresponding section of the README
 To install this application, input the following commands from an integrated terminal line:
 ```bash
 cd Develop
-nmp i
+npm i
 ```
 
 ## Usage
